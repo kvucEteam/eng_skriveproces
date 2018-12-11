@@ -1,0 +1,391 @@
+
+
+
+/**********************************/
+
+
+
+
+/*************************************
+        Generel styling
+*************************************/
+
+/*
+.TextHolder {
+    min-height: 100px; 
+    max-height: 550px;
+    width: 750px;
+    min-width: 360px;
+    padding: 20px 40px 20px 20px; 
+    margin: 0px 30px 30px 0px; 
+    background: #fff; 
+    border-radius: 6px;
+}
+
+.Clear{
+    clear: both;
+}
+
+
+.explanation {
+    margin-bottom: 20px;
+}
+
+.explanation div:nth-child(2){
+    width: 80%;
+}
+
+.explanation > .glyphicon{
+    color: #56bfc5;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.7;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+.instruktion {
+    width: 100%;
+}
+.instruktion div:nth-child(2){
+    width: 80%;
+}
+*/
+
+
+/*************************************
+        Objekt styling
+*************************************/
+
+.Dropdown {
+    width: 100%;
+    margin: 0px 15px 15px 0px;
+    /*height: 35px;*/
+}
+
+audio {
+    width: 280px;  /* Ellers er audio for lang */
+}
+
+
+textarea {
+    height: 120px;
+    width: 100%;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+}
+
+
+
+/***********************************************************************    
+            Fjerner den graalige farve fra textarea
+***********************************************************************/ 
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: inherit; 
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: inherit;   
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: inherit;  
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: inherit;  
+}
+:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+  color: inherit;  
+}
+
+/***********************************************************************    
+        Fjerner den graalige farve fra input-felter 
+***********************************************************************/
+.input-group input{
+    color: inherit;  
+}
+
+.form-control::-moz-placeholder{
+    color: inherit;  
+}
+/**********************************************************************/ 
+
+
+.stepNav {
+    margin: 30px 0px 10px 0px;
+}
+
+.stepNav audio{
+    float: right;
+    position: relative;
+    top: 10px;
+}
+
+#processVal{
+    /*width: 8%;*/
+    float: right;
+    color: #777;
+    width: 45px;
+    text-align: right;
+}
+
+#processBarContainer{
+
+    /****************************************************************************************************
+     * IMPORTANT NOTE:
+     * ===============
+     * Below are implementations of "CSS-trickery" in diffrent browsers 
+     * that makes it possible to make somthing a certain width in percent, 
+     * subsequently add or subtract a definite lenth in px! This implementation 
+     * can potentially makes furture width- and height JS-hacks obsolete!!!
+     *
+     * SEE:   
+     * http://stackoverflow.com/questions/2434602/css-setting-width-height-as-percentage-minus-pixels;
+     *
+     * See where this "calc()" functionality is supported (supported in IE11 and IE9):
+     * http://caniuse.com/#feat=calc
+     *
+     *
+     * ON A RELATED NOTE...
+     * ====================
+     * CSS 3 defines variables through the "var()" functionality:
+     * https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables
+     *
+     * - but it is currently (April 2016) not supported in many browsers (contemplate using SASS and LESS instead):
+     * http://caniuse.com/#feat=css-variables
+     *
+     * CSS Preprocessors – Sass vs LESS:
+     * https://www.keycdn.com/blog/sass-vs-less/
+     *
+     ****************************************************************************************************/
+
+    /* Firefox */
+    width: -moz-calc(100% - 45px);
+    /* WebKit */
+    width: -webkit-calc(100% - 45px);
+    /* Opera */
+    width: -o-calc(100% - 45px);
+    /* Standard CSS3-compliant browsers */
+    width: calc(100% - 45px);
+
+    /*width: 92%;*/
+    height: 12px;
+    float: left;
+    border: 1px solid #cececc;
+    margin-top: 6px;
+    border-radius: 2px;
+}
+
+
+#processBar{
+    height: 10px;
+    background-color: #e7e6e2;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+
+
+/***********************************************************************************
+// 
+//              CSS TIL SKRIVEGUIDE MED ERWIN PHLAN  -   16/6-2017
+//
+//*********************************************************************************/
+
+#UserMsgBox .text_chapter p {
+    margin-bottom: 10px;
+}
+
+.text{
+    margin-top: 20px;
+}
+
+.goForward{
+    float: right;
+}
+
+.stepNav{
+    margin: 30px 0px 10px 0px;
+}
+
+.infoBtn {
+    margin: 0px 10px 10px 0px;
+}
+
+.helperText{
+    margin: 10px 0px 10px 0px;
+}
+
+.workQuestion{
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    background-color: #e7e6e2;
+}
+
+#template_userMsgBox_id{
+    border: 0 solid silver;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 30px 40px 30px 30px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 20%;
+    line-height: 1.5em;
+    position: absolute;
+    max-height: 70%;
+    overflow: auto;
+
+    max-width: 720px;
+    left: 0;
+    right: 0;
+    cursor: default;
+}
+
+#template_userMsgBox_id .CloseClass{
+    cursor: pointer;
+}
+
+.template_userMsgBox_class{
+    background-color: rgba(0,0,0,.5);
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 101;
+}
+
+.step_clipborad {
+    margin-bottom: 20px;
+}
+
+.border_red{
+    border: 1px solid #F00;
+    margin: 10px;
+    padding: 10px;
+}
+
+.border_green{
+    border: 1px solid #0F0;
+    margin: 10px;
+    padding: 10px;
+}
+
+.border_blue{
+    border: 1px solid #00F;
+    margin: 10px;
+    padding: 10px;
+}
+
+.step_clipborad_header {
+
+}
+
+.save{
+    float: right;
+    clear: both;
+    margin-right: 0px;
+    margin-top: 20px; 
+}
+
+.edit{
+    font-size: 120%;
+    margin-left: 20px;
+    margin-right: 0px;
+}
+
+.red{
+    color: #F00;
+}
+
+.narrow{
+    height: 40px;
+}
+
+.inputField_group {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.download{
+    margin-left: 15px;
+}
+
+.glyphicons-download-alt{
+    margin-left: 10px;
+}
+
+.MsgBox_bgr{
+    z-index: 101;
+}
+
+#summeryContainer span {
+    margin-right: 10px;
+}
+
+#summeryContainer h1,
+#summeryContainer h3,
+#summeryContainer span,
+#summeryContainer p,
+#summeryContainer i  {
+    cursor: pointer;
+    background-color: 
+    /*display: inline-block;*/
+    /*padding-right: 20px;*/
+}
+
+/*
+#summeryContainer .glyphicon{
+    z-index: -1;
+    position: relative;
+    left: -20px;
+}
+*/
+
+.contentWrap {
+    display: inline-block;
+}
+
+.contentWrap i {
+    margin-bottom: 13px;
+}
+
+#author span{
+    margin-right: 0px;
+}
+
+#author div{
+    display: inline-block;
+}
+
+
+.glyphicon-info-sign:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.glyphicons-thumbs-up{
+    font-size: 150%;
+    position: relative;
+    top: 0px;
+    margin-left: 3px;
+}
+
+.emptyField {
+    color: #CCC;
+}
+
+#submit {
+    display: none;
+}
+
+.instr_header{
+    margin-top: 0px;
+    font-weight: 900;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.fieldData{
+    white-space: pre-wrap;
+}
