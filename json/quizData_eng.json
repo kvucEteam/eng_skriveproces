@@ -11,7 +11,7 @@
             "NOTE_1": "Årsagen til at content er et array er, at JSON ikke understøtter flere ens keys, som f.eks 'text' eller 'inputField'",
             "content": [
                 { "header": "json(general.header)" },
-                { "instruction": "<h3 class='instr_header'>Introduction to the reading of the novel <em>Foster</em> </h3>Enjoy exploring a local universe: <br/><br/>Irish author Claire Keegan issued the novel <em>Foster</em> in 2010. The young girl Petal moves to her relatives, the Kinsellas, while her mother prepares for another childbirth. <br/>During her stay Petal encounters new aspects of life and when she returns to her family she has changed.<br/><br/>In modules 1, 2 and 3 you will get the opportunity to elaborate on your personal reading by responding to general tasks. In each module you will write the notes you need to complete assignment 4.<br/>" },
+                { "instruction": "<h3 class='instr_header'>Introduction to the reading of the novel <em>Foster</em> </h3>Enjoy exploring a local universe: <br/><br/>Irish author Claire Keegan issued the novel <em>Foster</em> in 2010. The young girl Petal moves to the Kinsellas, while her mother prepares for another childbirth. <br/>During her stay Petal encounters new aspects of life and when she returns to her family she has changed.<br/><br/>In modules 1, 2 and 3 you will get the opportunity to elaborate on your personal reading by responding to general tasks. In each module you will write the notes you need to complete assignment 4.<br/>" },
                 { "html": "<div class='Clear'></div>" }, {
                     
                     "btn": {
@@ -67,13 +67,13 @@
                             }
                         }, {
                             "onClick": {
-                                "target": "#characterisation",
+                                "target": "#protagonist",
                                 "NOTE": "Alle id'er og klasser angives med mellemrum - ligesom i 'target' for dropdowns",
                                 "template": "template_noWrap",
                                 "template_noWrap": {
                                     "content": [{
                                         "microhint": {
-                                            "obj": "#characterisation",
+                                            "obj": "#protagonist",
                                             "text": "Characters can be presented in two ways:<br/><ol><li>Direct characterization tells the reader directly what sort of person a character is.</li><li>Indirect characterization forces a reader to draw conclusions about what the character is like by what the character says or does.<br/>Characterization is about a literary figure’s: Name, age, appearance, thoughts, feelings, maturity, behaviour, education, social status, relations to other people or a place, development etc.",
                                             "multiple": true,
                                             "color": "#000"
@@ -131,13 +131,13 @@
                         "value": "html('#step_clipborad_1 .text_2_1', '.instructionText')",
                         "events": [{
                             "onClick": {
-                                "target": "#setting",
+                                "target": "#protagonist",
                                 "NOTE": "Alle id'er og klasser angives med mellemrum - ligesom i 'target' for dropdowns",
                                 "template": "template_noWrap",
                                 "template_noWrap": {
                                     "content": [{
                                         "microhint": {
-                                            "obj": "#setting",
+                                            "obj": "#protagonist",
                                             "text": "A protagonist is the <b>leading character</b> or one of the major characters in a short story, novel, play, film etc.",
                                             "multiple": true,
                                             "color": "#000"
@@ -154,7 +154,7 @@
                                     "content": [{
                                         "microhint": {
                                             "obj": "#characterisation",
-                                            "text": "Characters can be presented in two ways:<br/><ol><li>Direct characterization tells the reader directly what sort of person a character is.</li><li>Indirect characterization forces a reader to draw conclusions about what the character is like by what the character says or does.<br/>Characterization is about a literary figure’s: Name, age, appearance, thoughts, feelings, maturity, behaviour, education, social status, relations to other people or a place, development etc.",
+                                            "text": "Characters can be presented in two ways:<br/><br/><ol><li>Direct characterization tells the reader directly what sort of person a character is.</li><br/><li>Indirect characterization forces a reader to draw conclusions about what the character is like by what the character says or does.<br/>Characterization is about a literary figure’s: Name, age, appearance, thoughts, feelings, maturity, behaviour, education, social status, relations to other people or a place, development etc.",
                                             "multiple": true,
                                             "color": "#000"
                                         }
@@ -217,7 +217,7 @@
                                     "content": [{
                                         "microhint": {
                                             "obj": "#setting",
-                                            "text": "Physical setting is about: Place, geography, season, weather etc.<br/>Social setting is about: Social class, circumstances etc.<br/>Time is about: When, a few minutes or a lifetime? Period of history etc.",
+                                            "text": "Physical setting is about: Place, geography, season, weather etc.<br/>Social setting is about: Social class, circumstances etc.<br/><br/>Time is about: When, a few minutes or a lifetime? Period of history etc.",
                                             "multiple": true,
                                             "color": "#000"
                                         }
@@ -343,7 +343,7 @@
                                     "content": [{
                                         "microhint": {
                                             "obj": "#symbolism",
-                                            "text": "Symbolism is the use of symbols to signify ideas and qualities by giving them symbolic meanings that are different from their literal sense.<br/>Something represents something else to give an entirely different meaning that is deeper and more significant.<br/>Symbols shift their meanings depending on the context they are used in. A chain may stand for union as well as imprisonment. Symbolic meaning is understood by when, where, and how it is used. It also depends on who reads the work.</br>The dove is a symbol of peace. A red rose stands for love. Black is a symbol that represents evil or death. A ladder may stand as a symbol for a connection between heaven and earth. A broken mirror may symbolize separation. And water and soil and new clothes and you name it.<br/>",
+                                            "text": "Symbolism is the use of symbols to signify ideas and qualities by giving them symbolic meanings that are different from their literal sense.<br/>Something represents something else to give an entirely different meaning that is deeper and more significant.<br/> <br/>Symbols shift their meanings depending on the context they are used in. A chain may stand for union as well as imprisonment. Symbolic meaning is understood by when, where, and how it is used. It also depends on who reads the work.</br>The dove is a symbol of peace. A red rose stands for love. Black is a symbol that represents evil or death.<br/>",
                                             "multiple": true,
                                             "color": "#000"
                                         }
@@ -659,7 +659,7 @@
                                     "content": [{
                                         "microhint": {
                                             "obj": "#language",
-                                            "text": "In your analysis it is often fruitful to consider the effect of language – whether it is simple or complex (long sentences, complex vocabulary or not), straightforward or figurative (It is raining/ A river of tears flow from the sky) or whether it mirrors the protagonist’s state of mind (short, fast sentences mirror Daphne’s panic attack in the mall). ",
+                                            "text": "In your analysis it is often fruitful to consider the effect of language – whether it: <ul><li> Is simple or complex (long sentences, complex vocabulary or not)</li> <li>Is straightforward or figurative (It is raining / A river of tears flows from the sky)</li><li>Mirrors the protagonist’s state of mind (short, fast sentences mirror Daphne’s panic attack in the mall). </li></ul>",
                                             "multiple": true,
                                             "color": "#000"
                                         }
@@ -686,7 +686,7 @@
                     }
                 },
             { "html": "<div class='Clear'></div>" },
-                { "text": "<p class='helperText'>Write your elaboration here:</p>" }, {
+                { "text": "<p class='helperText'>Write your notes here:</p>" }, {
                     "textArea": {
                         "attr": { "id": "textArea_11_1" }
                     }
@@ -738,7 +738,7 @@
                                     "content": [{
                                         "microhint": {
                                             "obj": "#mood",
-                                            "text": "The tone of a text is the feel established by the narrative voice. The tone can be created in many different ways: through the choice of motif, theme, setting, type of characters, diction, overall use of language, etc. The tone can be ironic, sarcastic, humorous, comic, tongue-in-cheek, intense, understated, hostile, pathetic, tragic, etc.<br/>Setting, theme, tone, language and diction are examples of literary devices used to create a certain mood (also referred to as atmosphere) meant to evoke certain feelings in the reader. For instance, the mood in a text can be peaceful, joyous, sinister, tense etc.",
+                                            "text": "The tone of a text is the feel established by the narrative voice. The tone can be created in many different ways: through the choice of motif, theme, setting, type of characters, diction, overall use of language, etc. The tone can be ironic, sarcastic, humorous, comic, tongue-in-cheek, intense, understated, hostile, pathetic, tragic, etc.<br/><br/>Setting, theme, tone, language and diction are examples of literary devices used to create a certain mood (also referred to as atmosphere) meant to evoke certain feelings in the reader. For instance, the mood in a text can be peaceful, joyous, sinister, tense etc.",
                                             "multiple": true,
                                             "color": "#000"
                                         }
@@ -896,7 +896,7 @@
                                     "content": [{
                                         "microhint": {
                                             "obj": "#belonging",
-                                            "text": "Belonging means to feel at home. On the contrary estrangement emerges when a literary character ceases to maintain a connection to the familiar world that surrounds her and when she is exposed to an unfamiliar world. Daphne in Baglady exemplifies an estranged character.",
+                                            "text": "Belonging means to feel at home. On the contrary estrangement emerges when a literary character ceases to maintain a connection to the familiar world that surrounds her and when she is exposed to an unfamiliar world. Daphne in <em>Baglady</em> exemplifies an estranged character.",
                                             "multiple": true,
                                             "color": "#000"
                                         }
@@ -1000,6 +1000,8 @@
                             }
                         }]
                     }
+
+
                 },
             { "html": "<div class='Clear'></div>" },
                 { "text": "<p class='helperText'>Write your answers here:</p>" }, {

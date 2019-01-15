@@ -169,11 +169,11 @@ writeProcessClass = {
         var header = "Online notes"; //$("h1").html();
         if (this.api.currentStepNo < 6) {
         	//alert("hvor mange gange?")
-			$("h1").html("Module 1: " + header + " for chapter 1-4");
-        } else if (this.api.currentStepNo > 5 && this.api.currentStepNo < 11) {
+			$("h1").html("Module 1: " + header + " for chapters 1-4");
+        } else if (this.api.currentStepNo > 5 && this.api.currentStepNo < 10) {
             $("h1").html("Module 2: " + header + " for chapter 5");
-        } else if (this.api.currentStepNo > 10 && this.api.currentStepNo < 14) {
-            $("h1").html("Module 3: " + header + " for chapter 6-8");
+        } else if (this.api.currentStepNo > 9 && this.api.currentStepNo < 14) {
+            $("h1").html("Module 3: " + header + " for chapters 6-8");
         } else{
         	$("h1").html(header + " - Final review");
         }
